@@ -4,6 +4,23 @@ Welcome to the Swap Sender repository! This repository provides Python scripts t
 File Mover (mover.py)
 move_all_files(source_path, destination_path)
 
+# Installation 
+
+lorem ipsum solor sit dolor et amet. Lingua et loria naor lori sedium amedor, sigue set amet il mel ahmerado jilaro sinet. 
+
+1. Finish setting up the code by inputting your desired qualities
+2. cd swap-sender
+3. Run ./run.exe
+4. Enjoy
+
+To end the command,
+
+     taskkill /F /IM run.exe
+
+*Adjusted to make the application run easy for low-end systems, should only take up .8 mb on average*
+
+# Information
+
 This function efficiently moves all files from the source directory to the specified destination directory.
 
     Parameters:
@@ -21,6 +38,8 @@ This function randomly selects a user-defined number of files from the source di
 
 Email Sender (sender.py)
 send_email(sender_email, sender_password, receiver_email, subject, body, files)
+
+# Setting up
 
 This function sends an email with attachments using specified SMTP server details.
 
