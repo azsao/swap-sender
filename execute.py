@@ -12,7 +12,7 @@ def check_directories_exist():
     print(f'Directory "{referencepp_directory}" exists: {referencepp_exists}')
     print(f'Directory "{scripts_directory}" exists: {scripts_exists}')
 
-sleep(4)
+sleep(2)
 
 if __name__ == "__main__":
     check_directories_exist()
@@ -25,6 +25,14 @@ if __name__ == "__main__":
     except subprocess.CalledProcessError as e:
         print(f"Error executing script '{mover_path}': {e}")
 
+    # Run the name script
+    name_path = 'scripts/name.py'
+    try:
+        subprocess.run(['python', name_path], check=True)
+        print(f"Script '{name_path}' executed successfully.")
+    except subprocess.CalledProcessError as e:
+        print(f"Error executing script '{name_path}': {e}")
+
     # Run the sender script
     sender_path = 'scripts/sender.py'
     try:
@@ -32,4 +40,3 @@ if __name__ == "__main__":
         print(f"Script '{sender_path}' executed successfully.")
     except subprocess.CalledProcessError as e:
         print(f"Error executing script '{sender_path}': {e}")
-
